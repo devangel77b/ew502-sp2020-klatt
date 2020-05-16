@@ -1,13 +1,30 @@
 \documentclass{IEEEtran}
 
 % Minimal set of packages needed to compile...
-\usepackage{cite}
+\usepackage[noadjust]{cite}
 \bibliographystyle{IEEEtran}
 \usepackage[plain]{fancyref}
+\renewcommand{\freffigname}{Fig.}
+\renewcommand{\Freffigname}{Fig.} 
+\renewcommand{\freftabname}{Table}
+\renewcommand{\Freftabname}{Table}
+\frefformat{plain}{\fancyrefeqlabelprefix}{(#1)} 
+\Frefformat{plain}{\fancyrefeqlabelprefix}{(#1)} 
 \usepackage{graphicx}
 \usepackage{siunitx}
 \usepackage{booktabs}
 \usepackage{amsmath,amsfonts,amssymb}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{hyperref}
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=violet,
+	urlcolor=blue,
+	citecolor=blue,
+	pdfauthor={Evan Klatt},
+	pdftitle={Bioinspired agility optimization of underwater unmanned vehicles through fin population and placement},
+	pdfsubject={bioinspired design},
+	pdfkeywords={fish, fins, UUV, bioinspiration, biomimetics, maneuvering, agility}}
 
 \title{Bioinspired Agility Optimization of Underwater Unmanned Vehicles through Fin Population and Placement}
 \author{Evan Klatt\thanks{Author is with the Department of Weapons, Robotics, and Control Engineering at the United States Naval Academy. Address for correspondence: \emph{m213546@usna.edu}}}
@@ -19,6 +36,10 @@
 \begin{abstract}
 Unmanned underwater vehicles (UUVs) have been the subject of increased funding and interest in both military and private sectors. They offer capabilities that enable efficient undersea research, surveillance, inspections and mapping for companies. Navies around the world use UUVs for applications such as mine countermeasures, information operations, and anti-submarine warfare. In this project, we will research fish fin biomechanics and develop a bioinspired fin application for UUVs to improve their agility. To do this we will create a Simulink model of a UUV and test its agility as a result of where the fins are located on the UUV body and how many fins are placed in total. The design that produces the highest angular velocity during maneuvering simulations will be combined with a similar project focusing on improving agility through fin design. A proof-of-concept experiment will be executed using a commercial UUV and our proposed fin number, placements, and design. We will measure the angular velocity using cameras and how long the UUV takes to execute turns. We will also implement Flexicore force sensors to measure the pitch forces produced by UUV maneuvers. Research and simulation will be completed during the 2021 academic year fall semester and experimentation is scheduled to be finished in early April of the following spring semester. The project will cost \$32,063 with only \$1484 of out-of-pocket cost. Our project, in conjunction with a fin design project, will look to produce a UUV more agile than those produced in related research projects  -- showing the advantages of bioinspired technology and a specialized research approach.
 \end{abstract}
+
+\begin{IEEEkeywords}
+fish, fins, UUV, bioinspiration, biomimetics, maneuvering, agility
+\end{IEEEkeywords}
 
 \section{Background and motivation}
 \IEEEPARstart{D}{rones and unmanned systems} are a fast growing area of research and development. Unmanned underwater vehicles (UUVs) are vehicles that are capable of operating underwater without a human occupant. UUVs offer a plethora of civilian and military applications and are a constant subject of increased funding and interest in both sectors. This kind of drone must operate with the engineering challenges presented in an underwater environment. Such challenges include, but are not limited to, communication disturbances, navigation inaccuracies, maneuvering and trajectory control difficulties when faced with buoyancy and extreme pressures, and sustainable power sources \cite{nrc2005autonomous}. UUVs must be designed to not only deal with these challenges, but also execute an often broad set of missions. This presents considerable engineering demands and funding requirements.
