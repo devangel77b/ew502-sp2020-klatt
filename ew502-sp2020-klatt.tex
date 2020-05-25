@@ -30,6 +30,8 @@
 	pdftitle={Bioinspired agility optimization of underwater unmanned vehicles through fin population and placement},
 	pdfsubject={bioinspired design},
 	pdfkeywords={fish, fins, UUV, bioinspiration, biomimetics, maneuvering, agility}}
+\usepackage{titlecaps}
+\Addlcwords{through of and or}
 
 % for editing use
 \usepackage{color}
@@ -37,7 +39,7 @@
 \definecolor{mylilac}{RGB}{170,55,241}
 \usepackage[colorinlistoftodos]{todonotes}
 
-\title{Bioinspired Agility Optimization of Underwater Unmanned Vehicles through Fin Population and Placement}
+\title{\titlecap{Bioinspired agility optimization of underwater unmanned vehicles through fin population and placement}}
 \author{Evan Klatt\thanks{Author is with the Department of Weapons, Robotics, and Control Engineering at the United States Naval Academy. Address for correspondence: \emph{m213546@usna.edu}}}
 %Adviser: Prof. D. Evangelista
 \date{\today}
@@ -52,7 +54,7 @@ Unmanned underwater vehicles (UUVs) have been the subject of increased funding a
 fish, fins, UUV, bioinspiration, biomimetics, maneuvering, agility
 \end{IEEEkeywords}
 
-\section{Background and motivation}
+\section{\titlecap{Background and motivation}}
 \IEEEPARstart{D}{rones and unmanned systems} are a fast growing area of research and development. Unmanned underwater vehicles (UUVs) are vehicles that are capable of operating underwater without a human occupant. UUVs offer a plethora of civilian and military applications and are a constant subject of increased funding and interest in both sectors. This kind of drone must operate with the engineering challenges presented in an underwater environment. Such challenges include, but are not limited to, communication disturbances, navigation inaccuracies, maneuvering and trajectory control difficulties when faced with buoyancy and extreme pressures, and sustainable power sources \cite{nrc2005autonomous}. UUVs must be designed to not only deal with these challenges, but also execute an often broad set of missions. This presents considerable engineering demands and funding requirements.
 
 % Esposito made you define these? 
@@ -82,7 +84,7 @@ Most of our ocean is ``unmapped, unobserved, and unexplored'' \cite{noaa2009how}
 
 
 
-\section{Problem statement}
+\section{\titlecap{Problem statement}}
 The goal of this project is to find the ideal fin type and placement to produce the highest level of UUV agility. Using the dorsal, caudal, and pectoral fin design commonly found on various fish species, this project will research the impact of various fin designs and placement location on unmanned underwater vehicles (UUVs) to determine which fin design offers the greatest capacity to induce agility and control while traveling at a constant speed underwater. Agility will be determined through the scope of its ability to execute sudden turns and pitches at quick rates. Performance metrics are angular velocity, angular acceleration, and turn radius. The bioinspired UUV will rely on astern propulsion via a motor and propeller. Our simulation will include the following assumptions:
 \begin{enumerate}
 \item A rigid fin structure.
@@ -105,7 +107,7 @@ There will be two avenues of research in this project that will study UUV perfor
 
 
 
-\section{Literature review}
+\section{\titlecap{Literature review}}
 There is extensive research on the application of animal biomechanics to robotics and technology in general. More specifically, UUVs and AUVs are subjects of constant study and improvement. Their ``mission envelope'' and its expansion is analyzed in \cite{nrc2005autonomous}, to include prominent limitations of their capabilities. The research in \cite{nrc2005autonomous} offers a broad scope of information pertaining to the technology we will be modeling and testing in our project. In essence, \cite{nrc2005autonomous} offers avenues for eventual application of the results of our research on fin design and placement for agility, providing an overarching direction for our work.
 
 Our research focus of fin design and placement on UUVs for optimal agility will draw extensively from previous research with motivation for naval application. The work done in \cite{noaa2009how} primarily aimed to develop robotic C-shape turning (CST), and is an example of the process required for modeling animal, and more specifically, fish, biomechanics. While our research goal is not focused on fish-like swimming, the application of \cite{noaa2009how} to our process is clear in that we can use its modeling strategies and possibly specific motion equations to create our fin-based, UUV model. Additionally, the demonstration methods in \cite{noaa2009how} of initial simulation to realization through physical experimentation parallel our demonstration plan.
@@ -122,7 +124,7 @@ Research in \cite{nrc2005autonomous, noaa2009how, maslin2020raising} offer broad
 
 There is substantial research and experimentation on bio-inspired UUV performance. UUV designs are constantly being improved and optimized for mission areas, with research supporting these designs. Our approach is specific to optimizing maneuverability in present-day designs by applying bio-inspired fins. Our process will be unique in that two avenues of research will be conducted with separate goals of finding the best fin structure and the best fin placement/positioning for optimal UUV agility to be eventually merged and tested. The expectation of this approach is that these high-specialized avenues of research and their culminating integration will produce a fin model applicable to UUVs with agility performance outcomes that outperform similar results in previous research.
 
-\section{Demonstration plan}
+\section{\titlecap{Demonstration plan}}
 We plan on demonstrating the results of our research through model simulation followed by a proof-of-concept experiment. We will develop a MATLAB/SIMULINK model of the UUV system we plan to use for eventual experimentation. Research will be done using the Simulink model of the equations of motion of the UUV to include dynamic effects of fin applications. The simulation and experiment will involve actuating the fin to predetermined angles to induce directional or depth changes. The model will serve as a testbed for various bio-inspired amounts and placements of fins. Multiple simulations will be run using fixed fin shapes and under assumptions that include zero current disturbances, instantaneous fin angle changes with negligible transient response, and stable buoyancy. In general, fin angle, number of fins, and fin placement will serve as the independent variables influencing the agility of the UUV. Upon the completion of the simulations, the research results giving optimum fin placements for UUV agility will be combined with MIDN Kenneally’s research results pertaining to fin design. The combination will be applied in a proof-of-concept experiment to determine if specialized study into the variables affect fin-driven agility and their subsequent combination produces highly maneuverable UUVs.
 
 The general steps of our demonstration plan are as follows:
@@ -135,7 +137,7 @@ UUV with added fins.
 \item To finish our project, we will assess results and compare to related research outcomes.
 \end{enumerate}
 
-\subsection{Simulation or computational studies}
+\subsection{\titlecap{Simulation or computational studies}}
 Our first project step will be to develop a model of an UUV system that we can use in simulation to determine which fin- based inputs will produce optimal performance outputs. The block diagram shown in \fref{fig:4} represents an overview of how we will design our SIMULINK model.
 \begin{figure*}
 \begin{center}
@@ -202,7 +204,7 @@ optimized combination & & \\
 \end{center}
 \end{table*}
 
-\subsection{Experimental work}
+\subsection{\titlecap{Experimental work}}
 In the proof-of-concept experiment, we will look to verify our simulated results through experimentation using a purchased UUV and fins that we design and actuate. Verification of our simulation will come in the form of a highly maneuverable UUV relative to those found in prior research mentioned in the literature review. We will need to design an actuating mechanism that attaches the fins to the UUV and allows us to apply angle changes to the fins while the UUV is traveling underwater at a constant velocity. The actual design of the fins will be determined by the results of MIDN Kenneally’s research regarding optimization of UUV maneuverability based on fin design. The placement and amount of fins on the experimental UUV will mimic the simulation outcomes of this paper as closely as possible. C code will be used and implemented on a microprocessor to actuate the fins at the correct time and angle prior to placing the UUV in the water, and a servo motor will be used to move the fins accordingly. \Fref{fig:UUV} shows the commercial UUV we will use for our experiment. This UUV is a standard design and will be easy to model in simulation. It also offers interior volume for sensor implementation.
 \begin{figure*}
 \begin{center}
@@ -212,7 +214,7 @@ In the proof-of-concept experiment, we will look to verify our simulated results
 \label{fig:UUV}
 \end{figure*}
 
-\subsection{Property measurement}
+\subsection{\titlecap{Property measurement}}
 It will be difficult to achieve accurate sensing on the UUV underwater. However, with underwater cameras and a consistent location of UUV fin actuation, we can estimate and compare its angular acceleration and velocity. It will be simple and reliable to visually compare UUV tests as long as the actuation occurs in the same frame. We will also use a dual-axis accelerometer and 3-axis gyroscope to obtain accurate maneuvering data. Additionally, assuming correlation of maneuvering ability with hydrodynamic force generated on the UUV, we will embed force sensors on the UUV to gain more data. We plan to use Flexicore force sensors along the body of our UUV as they are small, durable, and easy to implement. This force data would also allow us to compare our UUV’s performance to a broader scope of datasets in related research. The velocity and acceleration results will have equal weights of importance when comparing them to our own design modifications of the experimental UUV, as well as when we compare our results to other work. There is a plethora of research regarding UUV maneuverability as dependent on the peak thrust forces developed. Thus we will implement a split to allow a 20\% weight (40\% / 40\% vel. and accel.) on force measurements with successful force sensor implementation.
 
 Our overall performance mark will rely on prior research. We will determine average values for the same outputs we are measuring from related work. The related work comparison will reference the results in \cite{berenice2018splash, orourke2020navy, hiller2012expanding} at the minimum. The success of our research and subsequent experimental design will be relative to the average values of those related works. Our proposed performance metrics are detailed in the table below with angular velocity used as the example metric.
@@ -241,22 +243,22 @@ $^1$ over 150\% increase in normal UUV performance
 \label{eq:performance-ratio}
 \end{equation}
 
-\subsection{Technical risks and mitigation}
+\subsection{\titlecap{Technical risks and mitigation}}
 It will be essential that we waterproof all of our systems before experimentation. This will most likely require a sealant or casing. We will use an epoxy sealant on our system to waterproof electronics. We may also experience technical failure with our actuation system. The underwater environment will make it difficult to consistently and reliably move the fins. We are purchasing extra parts for our actuation system and we will work with the Naval Academy’s technical support staff to design a reliable and durable system for underwater testing.
 
-\subsection{Time risks and mitigation}
+\subsection{\titlecap{Time risks and mitigation}}
 Modeling the UUV and the effect of an underwater environment presents a complicated SIMULINK task and a time risk. An accurate model will require comprehensive study of related research. Additionally, implementing an actuation system for the fins that is also water-proof, presents another time risk. Actuating multiple fins underwater is a difficult electrical and mechanical engineering challenge.
 
 To mitigate these risks, we will need to allow for extra time for both tasks in our planning. We will also need to have a list of resources and people experienced in simulation and design to provide assistance. If we know who to approach for help, we can quickly overcome any setbacks we may experience. We will also keep extra sensors and parts in stock so our experiment can continue if there are any system failures Finally, we will need to determine where we can test our UUV. Our plan is to use the Macdonough Hall pool and test outside of the pool hours. Ideally, we will be able to test in the new control labs in Hopper Hall, but we will not assume they will be ready for use by spring semester. We will follow a basic testing checklist before each test run to insure we make the most of our allotted time at the pool facilities. This checklist will include a required parts list with back-up parts, a quick waterproofing check, and fin actuating tests to confirm the fins move as desired before testing.
 
-\subsection{Justification of special high risk activities}
+\subsection{\titlecap{Justification of special high risk activities}}
 This project does not include any of the high risk activities. All of our purchases are under \$3,500 and we are not learning a new programming system. We are purchasing an existing underwater vehicle, eliminating the need for us to design our own.
 
-\subsection{Budget}
+\subsection{\titlecap{Budget}}
 Our budget requires \$1484 of new items. High-cost items include our sensors and a Tetrix robotics kit. Our UUV is an inexpensive purchase, and though we do not anticipate needing more than one UUV, it will be easy to purchase more if it becomes necessary.
 % Bullshit table here
 
-\section{Conclusion}
+\section{\titlecap{Conclusion}}
 Our research project is a bioinspired approach to fin number and population for underwater unmanned vehicles. The combination of our results with a parallel fin design project will produce a fin application for UUVs to improve their agility. We will develop a simulation of a UUV with our fin application method and experimentally validate it using a purchased UUV with our fin system applied. This research will look solely at improving agility in UUVs and will not involve propulsive components like most related works. Our research approach is also specialized in that the variables that are involved with fin-based maneuverability are divided between two parallel projects with a concluding merger or results. This project faces the risks of using electronics in water, ineffective sensor implementation, and possible scheduling conflicts with a testing facility. We will mitigate the electronic risks by using multiple coatings of waterproofing sealants. We also are purchasing several kinds of sensors and will decide through experimentation which sensors can be effectively implemented. Finally, there are a lot of options for testing facilities at the Naval Academy. We need to be able to test in large pools of water without people present. Our timeline has time built in for testing to allow us to reschedule tests, and we can always plan experiments during non-swimming hours. This is assuming that Hopper Hall and its control labs are not available by spring semester.
 
 % References 8-12 seem to have never actually been cited in your text?
@@ -267,7 +269,7 @@ Our research project is a bioinspired approach to fin number and population for 
 
 
 \appendices
-\section{Timeline}
+\section{\titlecap{Timeline}}
 \label{app:A}
 Please see \fref{tab:ew495} and \ref{tab:ew402}
 
